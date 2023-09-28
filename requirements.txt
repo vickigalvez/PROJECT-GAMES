@@ -5,5 +5,5 @@ numpy
 pandas
 scikit-learn
 sklearn
-uvicorn
+uvicorn==0.23.2
 
