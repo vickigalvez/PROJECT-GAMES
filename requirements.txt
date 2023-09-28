@@ -3,6 +3,5 @@ matplotlib
 numpy
 pandas
 scikit-learn
-sklearn
 uvicorn==0.3.32
 
