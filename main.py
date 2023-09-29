@@ -18,7 +18,7 @@ def start():
 
 #Funcion creada con el objetivo de obtener el año con mas horas jugadas para un determinado género
 @app.get('/genero/{genre}')
-def PlayTimeGenre(genre: str) -> dict[str, int]:
+def PlayTimeGenre(genre: str):
     genre_df = df[df[genre] == 1]
     year_playtime_df = genre_df.groupby('release_year')['playtime_forever'].sum().reset_index()
     max_playtime_year = year_playtime_df.loc[year_playtime_df['playtime_forever'].idxmax(), 'release_year']
