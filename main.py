@@ -107,7 +107,7 @@ cosine_similarity = linear_kernel( tdfid_matrix, tdfid_matrix)
 
 
 #Función creada para recomendar  5 juegos similares al ingresado.
-@app.get('/recomendacion/{id_producto}')
+@app.get('/recomendacion_juego/{id_producto}')
 def recomendacion(id_producto: int):
     if id_producto not in muestra['steam_id'].values:
         return {'mensaje': 'No existe el id del juego.'}
@@ -120,4 +120,18 @@ def recomendacion(id_producto: int):
 
     return {'juegos recomendados': list(sim_juegos)}
 
+
+# Se crea la funcion de recomendación de 5 juegos recomendados para el usuario ingresado.
+@app.get('recomendacion_usuario/{id_usuario}')
+def recomendacion_usuario(id_usuario: str):
+    if id_usuario not in muestra['user_id'].values:
+        return {'mensaje': 'No existe el id del juego.'}
+    
+    titulo = muestra.loc[muestra['user_id'] == id_usuario, 'app_name'].iloc[0]
+    idx = muestra[muestra['app_name'] == titulo].index[0]
+    sim_cosine = list(enumerate(cosine_similarity[idx]))
+    sim_scores = sorted(sim_cosine, key=lambda x: x[1], reverse=True)
+    sim_ind = [i for i, _ in sim_scores[1:6]]
+    sim_juegos = muestra['app_name'].iloc[sim_ind].values.tolist()
+    return {'juegos recomendados': list(sim_juegos)}
 
