@@ -13,13 +13,13 @@ En la segunda etapa, nos sumergiremos en la fase de Análisis Exploratorio de lo
 En la tercera y última etapa, llegaremos al corazón de este proyecto: el Modelo de Recomendación. Aquí utilizaremos un modelo de machine learning para desarrollar un sistema de recomendación sobre los juegos en Steam utilizando técnicas de cálculo de similitud. Además, se desarrolló una API utilizando el framework FastAPI para disponibilizar los datos y se implementaron diferentes consultas para interactuar.
 
 # TAREAS REALIZADAS
-1. # ETL
+# ETL
 Realizamos un proceso de ETL (Extracción, Transformación y Carga) en el que extrajimos datos de diferentes fuentes, los transformamos según las necesidades del proyecto y los cargamos en un destino final para su análisis y uso posterior. Las herramientas utilizadas fueron: Python, Pandas Y Textblob
 
-2. # EDA
+# EDA
 Se realizó un Análisis Exploratorio de Datos (EDA) para investigar las relaciones entre las variables del dataset y descubrir patrones. Se utilizaron técnicas de visualización y se generaron gráficas. Las herramientas utilizadas fueron: Numpy, Pandas, Matplotlib, Seaborn, Wordcloud, NLTK, scikit-learn.
 
-3. # Deployment de la API
+# Deployment de la API
 Se desarrolló una API utilizando el framework FastAPI para disponibilizar los datos. Se implementaron las siguientes consultas:
 
    def PlayTimeGenre( genero : str ): devuelve el año con mas horas jugadas para dicho género.
@@ -34,11 +34,12 @@ Se desarrolló una API utilizando el framework FastAPI para disponibilizar los d
 
    Las herramientas utilizadas fueron: Uvicorn, Render, FastAPI
 
-4. # Modelo de Machine Learning
+# Modelo de Machine Learning
 Realizamos un modelo de Machine Learning para generar recomendaciones de juegos, utilizando algoritmos y técnicas que analizaron patrones en los datos de usuarios y juegos, con el fin de brindar recomendaciones personalizadas y precisas basadas en los gustos y preferencias de cada usuario. La herramienta utilizada fue: Scikit-Learn
 
 # LINKS DE UTILIDAD 
 ➮ Deployment: [Link de Render](https://project-deploy-682s.onrender.com)https://project-deploy-682s.onrender.com
+
 ➮ Video: Link al Video
 
 
