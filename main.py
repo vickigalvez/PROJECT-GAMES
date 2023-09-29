@@ -122,12 +122,12 @@ def recomendacion(id_producto: int):
 
 
 # Se crea la funcion de recomendación de 5 juegos recomendados para el usuario ingresado.
-@app.get('recomendacion_usuario/{id_usuario}')
-def recomendacion_usuario(id_usuario: str):
-    if id_usuario not in muestra['user_id'].values:
+@app.get('/recomendacion_usuario/{id_usuario}')
+def recomendacion_usuario(id_producto: str):
+    if id_producto not in muestra['user_id'].values:
         return {'mensaje': 'No existe el id del juego.'}
     
-    titulo = muestra.loc[muestra['user_id'] == id_usuario, 'app_name'].iloc[0]
+    titulo = muestra.loc[muestra['user_id'] == id_producto, 'app_name'].iloc[0]
     idx = muestra[muestra['app_name'] == titulo].index[0]
     sim_cosine = list(enumerate(cosine_similarity[idx]))
     sim_scores = sorted(sim_cosine, key=lambda x: x[1], reverse=True)
