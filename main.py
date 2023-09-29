@@ -123,7 +123,7 @@ def recomendacion(id_producto: int):
 
 # Se crea la funcion de recomendación de 5 juegos recomendados para el usuario ingresado.
 @app.get('/recomendacion_usuario/{id_usuario}')
-def recomendacion_usuario(id: str):
+def recomendacion_usuario(id: int):
     if id not in muestra['id'].values:
         return {'mensaje': 'No existe el id del juego.'}
     
