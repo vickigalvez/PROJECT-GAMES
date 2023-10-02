@@ -38,7 +38,7 @@ Se desarrolló una API utilizando el framework FastAPI para disponibilizar los d
 Realizamos un modelo de Machine Learning para generar recomendaciones de juegos, utilizando algoritmos y técnicas que analizaron patrones en los datos de usuarios y juegos, con el fin de brindar recomendaciones personalizadas y precisas basadas en los gustos y preferencias de cada usuario. La herramienta utilizada fue: Scikit-Learn
 
 # LINKS DE UTILIDAD 
-➮ Deployment: Link de Render (https://project-deploy-682s.onrender.com)https://project-deploy-682s.onrender.com
+➮ Deployment: Link de Render https://project-deploy-682s.onrender.com
 
 ➮ Video: Link al Video
 
