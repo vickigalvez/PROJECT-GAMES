@@ -40,7 +40,7 @@ Realizamos un modelo de Machine Learning para generar recomendaciones de juegos,
 # LINKS DE UTILIDAD 
 ➮ Deployment: Link de Render https://project-deploy-682s.onrender.com
 
-➮ Video: Link al Video
+➮ Video: Link al Video  https://youtu.be/Kv5kqXfO1nI
 
 
 
